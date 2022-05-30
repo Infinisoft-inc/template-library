@@ -5,7 +5,6 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "importHelpers": true,
-    "jsx": "react-jsx",
     "esModuleInterop": true,
     "sourceMap": true,
     "baseUrl": "./",
@@ -15,12 +14,7 @@
     },
     "allowSyntheticDefaultImports": true
   },
-  "include": [
-    "mock/**/*",
-    "src/**/*",
-    "config/*",
-    "modules/*.d.ts",
-    "typings.d.ts" ],
+  "include": ["mock/**/*", "src/**/*", "config/*"],
   "exclude": [
     "node_modules",
     "lib",

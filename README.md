@@ -1,4 +1,4 @@
-# Federated Module React Component Template
+# Federated Module Lirbary
 
 
 Powered 🚀 by [Infinisoft Inc.](https://www.infini-soft.com)
