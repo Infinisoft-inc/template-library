@@ -1,5 +1,5 @@
 {
-  "name": "{{name}}",
+  "name": "templat",
   "version": "0.0.1",
   "description": "",
   "private": true,
@@ -17,12 +17,8 @@
     "serve:dist": "serve -s dist"
   },
   "devDependencies": {
-    "@types/react": "^18.0.9",
-    "@types/react-dom": "^18.0.4"
   },
   "peerDependencies": {
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0"
   },
   "infinisoft":{
     "moduleFederation":{
