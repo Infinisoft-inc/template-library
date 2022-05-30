@@ -3,8 +3,8 @@
  * Infinisoft Inc.
  * www.infini-soft.com
  */
-import {{lib}} from './{{lib}}/{{lib}}';
-export * as types from './{{lib}}/types';
+import {{lib}} from './{{name}}/{{lib}}';
+export * as types from './{{name}}/types';
 
 export default {{lib}}
 
