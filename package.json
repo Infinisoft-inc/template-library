@@ -19,7 +19,8 @@
     "build:prod": "yarn run build:types& webpack -c webpack.config.prod.js",
     "deploy":"kli component deploy",
     "start:dev": "webpack serve -c webpack.config.js --open",
-    "serve:dist": "serve -s dist"
+    "serve:dist": "serve -s dist",
+    "clean":"rm -rf analyze dist node_modules"
   },
   "devDependencies": {},
   "peerDependencies": {},
