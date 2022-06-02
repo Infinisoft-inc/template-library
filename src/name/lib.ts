@@ -3,9 +3,9 @@
  * Infinisoft Inc.
  * www.infini-soft.com
  */
-import type { {{name}} } from "./types"
+import type { {{name}}Type } from "./types"
 
-const {{lib}}: {{name}} = () => {
+const {{lib}}= () => {
   
 }
 

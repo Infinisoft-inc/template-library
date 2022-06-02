@@ -4,6 +4,6 @@
  * Infinisoft Inc.
  * www.infini-soft.com
  */
-export type {{name}} = {
+export type {{name}}Type = {
 
 };
