@@ -1,4 +1,4 @@
-# Federated Module Lirbary
+# Federated Module Library
 
 
 Powered 🚀 by [Infinisoft Inc.](https://www.infini-soft.com)

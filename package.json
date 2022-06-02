@@ -10,22 +10,24 @@
   "module": "dist/index.js",
   "types": "dist/types.d.ts",
   "scripts": {
-    "build:dev": "yarn run build:types& webpack -c webpack.config.js",
+    "build:dev": "kli lib build",
+    "build:dev:watch": "kli lib build --watch-deploy",
+    "build:prod": "kli lib build --prod",
+    "build:prod:watch": "kli lib build --prod --watch-deploy",
+    "build:analyze": "kli lib build --analyze& start analyze/bundle-stats.html",
+    "build:analyze:baseline": "kli lib build --analyze-baseline& start analyze/bundle-stats.html",
     "test": "jest",
+    "test:watchAll": "jest --watchAll",
     "test:coverage": "jest --coverage&& start analyze/coverage/lcov-report/index.html",
-    "build:analyze": "webpack -c webpack.analyze.js",
-    "build:analyze:baseline": "webpack -c webpack.analyze.js --env ANALYZEBASELINE=true",
-    "build:types": "tsc -p tsconfig.json -d --emitDeclarationOnly --outFile dist/types.d.ts --esModuleInterop",
-    "build:prod": "yarn run build:types& webpack -c webpack.config.prod.js",
-    "deploy":"kli component deploy",
-    "start:dev": "webpack serve -c webpack.config.js --open",
+    "deploy": "kli lib deploy",
+    "start:dev": "webpack serve -c webpack.config.dev.js --open",
+    "start:prod": "webpack serve -c webpack.config.prod.js --open",
     "serve:dist": "serve -s dist",
-    "clean":"rm -rf analyze dist node_modules"
+    "clean": "rm -rf analyze dist node_modules"
   },
   "devDependencies": {},
   "peerDependencies": {},
   "infinisoft": {
-    "port":{{port}},
     "moduleFederation": {
       "lib":"{{lib}}",
       "remotes": {},
