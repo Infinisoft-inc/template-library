@@ -23,7 +23,8 @@
     "start:dev": "webpack serve -c webpack.config.dev.js --open",
     "start:prod": "webpack serve -c webpack.config.prod.js --open",
     "serve:dist": "serve -s dist",
-    "clean": "rm -rf analyze dist node_modules"
+    "clean": "rm -rf analyze dist node_modules",
+    "docs":"yarn clean& tsc& typedoc"
   },
   "devDependencies": {},
   "peerDependencies": {},
