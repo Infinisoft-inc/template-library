@@ -31,7 +31,12 @@
   "infinisoft": {
     "moduleFederation": {
       "lib":"{{lib}}",
-      "remotes": {},
+      "dev":{
+        "remotes": {}
+      },
+      "prod":{
+        "remotes": {}
+      },
       "exposes": {
         "./{{lib}}": "./src/{{name}}/{{lib}}"
       }
