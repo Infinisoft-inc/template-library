@@ -10,5 +10,5 @@ const custom = require('./config/custom.webpack.config.dev');
 
 module.exports = merge(custom, common, {
   mode: 'development',
-  devtool: 'inline-source-map',
+  devtool: 'eval-source-map',
 });
